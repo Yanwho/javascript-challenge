@@ -27,4 +27,11 @@ function showData(data) {
         row.append("td").text(d.comments)
     })
 }
+function handleClick() {
+    let datetime = d3.select("#datetime").property("value")
+    let filteredData = data.filter((d) => d.datetime == datetime)
 
+    showData(filteredData)
+}
+
+d3.select("#table-button").on("click", handleClick)
