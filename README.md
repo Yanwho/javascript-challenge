@@ -8,4 +8,4 @@ For the bonus "Level-2" page, I opted to use multiple input tags.   I'm sure tha
 Enjoy!<br></br>
 -Ed
 <br></br>
-Deployed via GitHub Pages @ https://yanwho.github.io/Javascript-Challenge/
+Deployed via GitHub Pages @ https://yanwho.github.io/Javascript-Challenge/UFO-level-1\index.html
