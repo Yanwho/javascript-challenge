@@ -49,6 +49,11 @@ body {
   bottom: 5px;
   left: 150px;
   width: 35px;
+}
+.level-2-link {
+  position: relative;
+  font-size: large;
+  left: 180px;
   color: rgb(250, 23, 23);
 }
 
