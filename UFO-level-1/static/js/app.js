@@ -36,4 +36,4 @@ function handleClick() {
     showData(filteredData)
 }
 
-d3.select("#table-button").on("click", handleClick)
+d3.select("#filter-button").on("click", handleClick)
