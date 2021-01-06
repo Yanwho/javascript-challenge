@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>UFO Finder (level 2)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.0.0/math.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="level_2_index.html">UFO Sightings
+            <img class="nav-ufo" src="static/images/ufo.svg">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero text-center">
+      <h1>UFO Sightings</h1>
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a Date</label>
+
+                        <!-- select #datetime for handleClick() -->
+                        <input class="form-control" id="date-filter-input" type="text" id="text" name="text-input">
+                      </li>
+                      <button id="date-button" type="button" class="btn btn-default">Filter Date
+                      </button>
+                      <li class="filter list-group-item">
+                        <label for="city">Enter a City</label>
+
+                        <!-- select #city for handleClick() -->
+                        <input class="form-control" id="city-filter-input" type="text" id="text" name="text-input">
+                      </li>
+                      <button id="city-button" type="button" class="btn btn-default">Filter City
+                      </button>
+                      <li class="filter list-group-item">
+                        <label for="state">Enter a State</label>
+
+                        <!-- select #state for handleClick() -->
+                        <input class="form-control" id="state-filter-input" type="text" id="text" name="text-input">
+                      </li>
+                      <button id="state-button" type="button" class="btn btn-default">Filter State
+                      </button>
+                      <li class="filter list-group-item">
+                        <label for="country">Enter a Country</label>
+
+                        <!-- select #country for handleClick() -->
+                        <input class="form-control" id="country-filter-input" type="text" id="text" name="text-input">
+                      </li>
+                      <button id="country-button" type="button" class="btn btn-default">Filter Country
+                      </button>
+                      <li class="filter list-group-item">
+                        <label for="shape">Enter a Shape</label>
+
+                        <!-- select #Shape for handleClick() -->
+                        <input class="form-control" id="shape-filter-input" type="text" id="text" name="text-input">
+                      </li>
+                      <button id="shape-button" type="button" class="btn btn-default">Filter Shape
+                      </button>
+                      <li class="filter list-group-item">
+                        <label for="duration">Enter a Duration</label>
+
+                        <!-- select #Duration for handleClick() -->
+                        <input class="form-control" id="duration-filter-input" type="text" id="text" name="text-input">
+                      </li>
+                      <button id="duration-button" type="button" class="btn btn-default">Filter Duration
+                      </button>
+                    </ul>
+                  </div>
+                  <!-- select #filter-btn-->
+                  
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="data-table" class="table table-striped">
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="output"></h1>
+    <footer class="footer">
+      <span class="bottom">UFO Sightings</span>
+    </footer>
+  </div>
+</body>
+
+<script src="static/js/app.js"></script>
+<script src="static/js/data.js"></script>
+
+</html>
