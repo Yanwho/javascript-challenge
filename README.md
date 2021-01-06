@@ -1,5 +1,5 @@
 <h1>javascript-challenge</h1>
- <img src="UFO-level-1\static\images\nasa.jpg">
+ <img src="static\images\nasa.jpg">
 <h2>There are a million ways to skin a digital cat... Here is one of them</h2>
 
 Using the starter code as a template, I successfully managed to create a fully functional data filtering site. <br>
