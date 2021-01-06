@@ -27,8 +27,10 @@ function showData(data) {
         row.append("td").text(d.comments)
     })
 }
+
+
 function handleClick() {
-    let datetime = d3.select("#datetime").property("value")
+    let datetime = d3.select("#date-filter-input").property("value")
     let filteredData = data.filter((d) => d.datetime == datetime)
 
     showData(filteredData)
